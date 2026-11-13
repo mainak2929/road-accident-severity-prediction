@@ -1,0 +1,88 @@
+{
+  "project_name": "UK Road Accident Severity Prediction (STATS19)",
+  "member": "Satyam (Member 3 - Feature Engineering & ML Pipeline)",
+  "handoff_to": "Mainak (Member 4 - Evaluation, Imbalance, Explainability & Demo)",
+  "random_seed": 42,
+  "target_column": "collision_severity",
+  "target_mapping": {
+    "raw_codes": {
+      "1": "Fatal",
+      "2": "Serious",
+      "3": "Slight"
+    },
+    "model_encoding": {
+      "1": 0,
+      "2": 1,
+      "3": 2
+    },
+    "inverse_encoding": {
+      "0": "Fatal",
+      "1": "Serious",
+      "2": "Slight"
+    }
+  },
+  "leakage_exclusions": [
+    "number_of_casualties",
+    "collision_index",
+    "date",
+    "time",
+    "date_parsed",
+    "police_force",
+    "pedestrian_crossing",
+    "speed_limit_imputed",
+    "collision_severity",
+    "collision_severity_label"
+  ],
+  "input_features": {
+    "numerical": [
+      "speed_limit",
+      "number_of_vehicles",
+      "latitude",
+      "longitude",
+      "kinetic_energy_proxy",
+      "hour_sin",
+      "hour_cos",
+      "month_sin",
+      "month_cos",
+      "speed_x_rural"
+    ],
+    "categorical": [
+      "road_type_label",
+      "first_road_class_label",
+      "urban_or_rural_area_label",
+      "light_conditions_label",
+      "weather_conditions_label",
+      "road_surface_conditions_label",
+      "junction_detail_label",
+      "junction_control_label",
+      "time_of_day_band"
+    ],
+    "binary": [
+      "is_weekend",
+      "is_rush_hour",
+      "is_night_risk",
+      "is_weekend_night",
+      "single_vehicle_crash",
+      "high_speed_unlit"
+    ]
+  },
+  "best_model": {
+    "algorithm": "RandomForestClassifier",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "class_weight": "balanced_subsample",
+      "random_state": 42
+    },
+    "metrics_on_test": {
+      "accuracy": 0.5521,
+      "balanced_accuracy": 0.4973,
+      "macro_f1": 0.3622,
+      "fatal_recall": 0.5553,
+      "serious_recall": 0.3223,
+      "slight_recall": 0.6144
+    }
+  },
+  "definition_of_done_verified": true
+}

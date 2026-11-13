@@ -1,4 +1,7 @@
 venv/
+.venv/
+__pycache__/
+*.log
 Road_Accident_Project.pdf
 *.csv
 
