@@ -1,0 +1,84 @@
+{
+  "evaluated_on": "stratified 20% holdout (random_state=42), N=103999; identical rows to models/test_holdout_with_predictions.parquet",
+  "selection_rule": {
+    "primary": "Macro F1",
+    "guard_rails": {
+      "Fatal Recall": 0.5,
+      "Serious Recall": 0.3
+    },
+    "tie_break": "Fatal PR-AUC",
+    "tie_band": 0.005,
+    "selection_data": "validation split (20% of training rows), never the holdout"
+  },
+  "selected_config": "RF - class weights",
+  "selected_model_file": "models/best_model_pipeline.joblib",
+  "validation_ranking": {
+    "RF - hybrid SMOTENC": {
+      "Macro F1": 0.3724,
+      "Fatal Recall": 0.4325,
+      "Serious Recall": 0.3825,
+      "Fatal PR-AUC": 0.0522
+    },
+    "RF - class weights": {
+      "Macro F1": 0.3656,
+      "Fatal Recall": 0.5642,
+      "Serious Recall": 0.3193,
+      "Fatal PR-AUC": 0.0605
+    },
+    "XGB - sample weights": {
+      "Macro F1": 0.3565,
+      "Fatal Recall": 0.6288,
+      "Serious Recall": 0.3274,
+      "Fatal PR-AUC": 0.0642
+    },
+    "XGB - random undersampling": {
+      "Macro F1": 0.3402,
+      "Fatal Recall": 0.6599,
+      "Serious Recall": 0.2925,
+      "Fatal PR-AUC": 0.0636
+    },
+    "RF - random undersampling": {
+      "Macro F1": 0.339,
+      "Fatal Recall": 0.668,
+      "Serious Recall": 0.2419,
+      "Fatal PR-AUC": 0.0593
+    },
+    "XGB - none": {
+      "Macro F1": 0.3018,
+      "Fatal Recall": 0.0,
+      "Serious Recall": 0.0166,
+      "Fatal PR-AUC": 0.0682
+    },
+    "RF - none": {
+      "Macro F1": 0.2934,
+      "Fatal Recall": 0.0,
+      "Serious Recall": 0.0035,
+      "Fatal PR-AUC": 0.0599
+    }
+  },
+  "holdout_metrics": {
+    "Accuracy": 0.5521,
+    "Balanced Accuracy": 0.4973,
+    "Macro F1": 0.3622,
+    "Weighted F1": 0.6129,
+    "Fatal Precision": 0.0446,
+    "Fatal Recall": 0.5553,
+    "Fatal F1": 0.0826,
+    "Serious Precision": 0.2717,
+    "Serious Recall": 0.3223,
+    "Serious F1": 0.2948,
+    "Slight Precision": 0.839,
+    "Slight Recall": 0.6144,
+    "Slight F1": 0.7093,
+    "Fatal PR-AUC": 0.0563,
+    "Serious PR-AUC": 0.2426,
+    "Slight PR-AUC": 0.8525,
+    "Macro ROC-AUC (OvR)": 0.6555
+  },
+  "fatal_lift_top_5pct": 5.179806308799114,
+  "class_names": [
+    "Fatal",
+    "Serious",
+    "Slight"
+  ]
+}

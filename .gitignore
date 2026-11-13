@@ -8,3 +8,6 @@ Road_Accident_Project.pdf
 # Ignore raw and intermediate data, but track processed parquet
 data/raw/
 data/intermediate/
+
+# Evaluation tables are deliverables: keep them despite the *.csv rule
+!reports/evaluation/*.csv

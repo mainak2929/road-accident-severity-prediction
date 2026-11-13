@@ -1,0 +1,48 @@
+column,status,note
+carriageway_hazards,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+carriageway_hazards_label,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+collision_day,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+collision_index,excluded,Record ID
+collision_minute,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+collision_month_name,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+collision_severity,excluded,TARGET
+collision_severity_label,excluded,Target label (direct encoding)
+collision_year,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+date,excluded,Raw string (month/weekend/hour derived instead)
+date_parsed,excluded,Raw datetime
+day_of_week,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+day_of_week_name,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+first_road_class,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+junction_control,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+junction_detail,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+light_conditions,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+number_of_casualties,excluded,"Post-outcome: counted after injuries are known, strongly tied to severity"
+pedestrian_crossing,excluded,Excluded by notebook 03 (operational)
+pedestrian_crossing_label,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+police_force,excluded,Administrative reporting unit
+road_surface_conditions,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+road_type,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+special_conditions_at_site,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+special_conditions_at_site_label,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+speed_limit_imputed,excluded,Cleaning flag
+time,excluded,Raw string
+trunk_road_flag,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+trunk_road_flag_label,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+urban_or_rural_area,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+weather_conditions,excluded,Not used by the pipeline (redundant code / label twin or not selected)
+collision_hour,USED,Pre-collision circumstance recorded at the scene
+collision_month,USED,Pre-collision circumstance recorded at the scene
+first_road_class_label,USED,Pre-collision circumstance recorded at the scene
+is_weekend,USED,Pre-collision circumstance recorded at the scene
+junction_control_label,USED,Pre-collision circumstance recorded at the scene
+junction_detail_label,USED,Pre-collision circumstance recorded at the scene
+latitude,USED,Location; risk of memorising local severity rates (ablated below)
+light_conditions_label,USED,Pre-collision circumstance recorded at the scene
+longitude,USED,Location; see latitude
+number_of_vehicles,USED,"Known at the scene; fine for report-time triage, NOT a pre-crash risk input"
+road_surface_conditions_label,USED,Pre-collision circumstance recorded at the scene
+road_type_label,USED,Pre-collision circumstance recorded at the scene
+speed_limit,USED,Pre-collision circumstance recorded at the scene
+time_of_day_band,USED,Pre-collision circumstance recorded at the scene
+urban_or_rural_area_label,USED,Pre-collision circumstance recorded at the scene
+weather_conditions_label,USED,Pre-collision circumstance recorded at the scene
