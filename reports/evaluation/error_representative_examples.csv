@@ -1,0 +1,17 @@
+error_type,collision_index,speed_limit,urban_or_rural_area_label,number_of_vehicles,road_type_label,light_conditions_label,weather_conditions_label,collision_hour,junction_detail_label,p_fatal,p_serious,p_slight
+"Missed fatal: true Fatal, predicted Slight",2022010400031,30.0,Urban,2,Roundabout,Daylight,Fine no high winds,13,Not at junction,0.0508022381565007,0.32841139849495166,0.6207863633485516
+"Missed fatal: true Fatal, predicted Slight",2023010466120,30.0,Urban,2,Roundabout,Daylight,Fine no high winds,8,Not at junction,0.042349078453302526,0.3391532563102432,0.618497665236459
+"Missed fatal: true Fatal, predicted Slight",2023010444763,20.0,Urban,2,One way street,Daylight,Fine no high winds,7,Missing / Unknown,0.030380175082199968,0.3594505748233147,0.6101692500944806
+"Missed fatal: true Fatal, predicted Slight",2019430332799,30.0,Urban,2,Roundabout,Darkness - lights lit,Fine no high winds,18,Not at junction,0.05763639178551974,0.3339651107108018,0.6083984975036807
+"False fatal alarm: true Slight, predicted Fatal",2021101110766,60.0,Rural,2,Single carriageway,Darkness - no lighting,Fine no high winds,3,Not at junction,0.8047891267079582,0.13142603109969728,0.06378484219234527
+"False fatal alarm: true Slight, predicted Fatal",201931B046119,60.0,Rural,2,Single carriageway,Darkness - no lighting,Fine no high winds,1,Not at junction,0.7870534143929288,0.1436509872310735,0.06929559837599855
+"False fatal alarm: true Slight, predicted Fatal",2019940004519,60.0,Rural,2,Single carriageway,Darkness - no lighting,Fine no high winds,1,Not at junction,0.7852971179815357,0.1437119388713591,0.07099094314710629
+"False fatal alarm: true Slight, predicted Fatal",2023991451985,70.0,Urban,2,Dual carriageway,Darkness - no lighting,Fine no high winds,1,Not at junction,0.7816098003508717,0.12051342399717781,0.09787677565195053
+"Missed serious: true Serious, predicted Slight",2021010347289,20.0,Urban,2,Unknown,Daylight,Unknown,15,Missing / Unknown,0.0030488374702781953,0.10774238674895947,0.8892087757807626
+"Missed serious: true Serious, predicted Slight",2023010479217,20.0,Urban,2,Unknown,Daylight,Unknown,13,Missing / Unknown,0.004610262311430899,0.11069164196224385,0.8846980957263268
+"Missed serious: true Serious, predicted Slight",2021010305488,20.0,Urban,2,Unknown,Darkness - lighting unknown,Unknown,19,Missing / Unknown,0.0,0.11764795625277387,0.8823520437472265
+"Missed serious: true Serious, predicted Slight",2022010396640,20.0,Urban,2,Unknown,Darkness - lights lit,Fine no high winds,17,Missing / Unknown,0.004595175803884987,0.15434562155377476,0.8410592026423405
+"Over-escalated: true Slight, predicted Serious",2021991108018,20.0,Urban,1,Single carriageway,Darkness - lights lit,Raining no high winds,17,Missing / Unknown,0.14357074188450591,0.5817989862790948,0.2746302718364002
+"Over-escalated: true Slight, predicted Serious",2021991015455,20.0,Urban,1,Single carriageway,Darkness - lights lit,Raining no high winds,17,Not at junction,0.14665875656671165,0.5640097003961458,0.2893315430371431
+"Over-escalated: true Slight, predicted Serious",2020990994388,30.0,Urban,1,Single carriageway,Darkness - lights lit,Raining no high winds,17,Missing / Unknown,0.1623841313237229,0.5639612841281291,0.2736545845481485
+"Over-escalated: true Slight, predicted Serious",2021991125527,30.0,Urban,1,Single carriageway,Darkness - lights lit,Raining no high winds,18,Missing / Unknown,0.1789857223102139,0.5468374146536993,0.2741768630360874
